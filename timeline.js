@@ -71,7 +71,7 @@ function loadExperience(experience){
                         <div class="card-body">
                             <div class="info-container right">
                                 <div class="basic-info">
-                                    <img src="./${company_logo}" alt="${company} logo" class="company-logo mb-3">
+                                    <img src="./company_logos/${company_logo}" alt="${company} logo" class="company-logo mb-3">
                                     <h5 class="card-title">${title}</h5>
                                     <h6 class="card-subtitle mb-2 text-muted">${company}</h6>
                                     <p class="card-text"><strong>${start_date} - ${end_date}</strong></p>
