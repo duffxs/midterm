@@ -1,0 +1,144 @@
+body {
+    background: linear-gradient(135deg, #6B73FF 0%, #000DFF 100%);
+    font-family: 'Arial', sans-serif;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background-color: #FFA500;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100%
+
+}
+
+.timeline {
+    position: relative;
+    padding: 20px 0;
+}
+
+.timeline-row {
+    position: relative;
+    margin-bottom: 50px; 
+}
+
+.timeline-dot {
+    width: 20px;
+    height: 20px;
+    background-color: #f4f4f9;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+
+.timeline-card {
+    border: none;
+    background-color: white;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.timeline-card:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); 
+}
+
+.info-container {
+    transition: transform 0.5s ease;
+    position: relative;
+    display: flex;
+}
+
+.info-container.left {
+    flex-direction: row-reverse;
+    margin-left: auto;
+    text-align: left;
+}
+
+.info-container.right {
+    flex-direction: row;
+    margin-right: auto;
+    text-align: right;
+}
+
+
+.basic-info {
+    width: 30%;
+    position: relative;
+    text-align: center;
+}
+
+.company-logo {
+    max-width: 80%; 
+    height: auto; 
+    margin-bottom: 1rem; 
+}
+
+
+.description {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+    width: 70%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    color: #666;
+    text-align: center;
+}
+
+.timeline-card:hover .info-container.left {
+    flex-direction: row; 
+}
+
+.timeline-card:hover .info-container.right {
+    flex-direction: row-reverse;
+}
+
+.timeline-card:hover .description {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.company-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.role {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #666;
+}
+
+.dates {
+    font-size: 0.9rem;
+    color: #888;
+    margin-top: 4px;
+}
+
+.timeline-dot {
+    background-color: #f4f4f9; /* Orange color */
+    transition: background-color 0.3s ease;
+}
+
+.timeline-card:hover .timeline-dot {
+    background-color: #0056b3;
+}

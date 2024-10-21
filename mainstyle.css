@@ -1,0 +1,201 @@
+body {
+    background: linear-gradient(135deg, #6B73FF 0%, #000DFF 100%);
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+.container {
+    max-width: 70%;
+    margin: 100px auto; /* Center the container */
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 1;
+}
+
+.container:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    font-size: 28px;
+    color: #333;
+    position: relative;
+}
+
+h1::before {
+    content: "";
+    width: 60px;
+    height: 3px;
+    background-color: #000DFF;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10px;
+}
+
+.form-control {
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    height: 45px;
+    border-radius: 8px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.form-control:focus {
+    border-color: #6B73FF;
+    box-shadow: 0 0 8px rgba(107, 115, 255, 0.6);
+}
+
+textarea.form-control {
+    height: auto;
+}
+
+button {
+    background: linear-gradient(135deg, #6B73FF 0%, #000DFF 100%);
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 12px;
+    width: 100%;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+button:hover {
+    background: linear-gradient(135deg, #6B73FF 0%, #4E4AFF 100%);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+}
+
+.submit-message {
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+    color: #6B73FF;
+    font-weight: bold;
+}
+
+.timeline {
+    position: relative;
+    padding: 20px 0;
+}
+
+.timeline-row {
+    position: relative;
+    margin-bottom: 50px; 
+}
+
+.timeline-dot {
+    width: 20px;
+    height: 20px;
+    background-color: #f4f4f9; /* Orange color */
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.timeline-card {
+    border: none;
+    background-color: white;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.timeline-card:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); 
+}
+
+.info-container {
+    transition: transform 0.5s ease;
+    position: relative;
+    display: flex;
+}
+
+.info-container.left {
+    flex-direction: row-reverse;
+    margin-left: auto;
+    text-align: left;
+}
+
+.info-container.right {
+    flex-direction: row;
+    margin-right: auto;
+    text-align: right;
+}
+
+.basic-info {
+    width: 30%;
+    position: relative;
+    text-align: center;
+}
+
+.company-logo {
+    max-width: 80%; 
+    height: auto; 
+    margin-bottom: 1rem; 
+}
+
+.description {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+    width: 70%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    color: #666;
+    text-align: center;
+}
+
+.timeline-card:hover .info-container.left {
+    flex-direction: row; 
+}
+
+.timeline-card:hover .info-container.right {
+    flex-direction: row-reverse;
+}
+
+.timeline-card:hover .description {
+    opacity: 1;
+    visibility: visible;
+}
+
+.company-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.role {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #666;
+}
+
+.dates {
+    font-size: 0.9rem;
+    color: #888;
+    margin-top: 4px;
+}
+
+.timeline-dot:hover {
+    background-color: #0056b3; /* Change on hover */
+}
+

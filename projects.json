@@ -1,0 +1,36 @@
+{
+    "movies": [
+        {
+            "movieId": "P001",
+            "title": "Personal Portfolio Website",
+            "year": 2023,
+            "price": 500,
+            "url": "./istockphoto-1333205574-612x612.jpg",
+            "description": "A personal portfolio website to showcase projects and skills. Built using HTML, CSS, and JavaScript."
+        },
+        {
+            "movieId": "P002",
+            "title": "E-commerce Store",
+            "year": 2023,
+            "price": 1000,
+            "url": "./gettyimages-1742433648-612x612.jpg",
+            "description": "A fully functional e-commerce store with product listings, shopping cart, and payment gateway integration. Built using React and Node.js."
+        },
+        {
+            "movieId": "P003",
+            "title": "Weather Forecast App",
+            "year": 2022,
+            "price": 300,
+            "url": "./cute-weather-characters-set-kids-sunny-cloudy-rainy-windy-clipart-collection-cartoon-style-cute-weather-characters-set-327797251.webp",
+            "description": "A weather forecasting app using OpenWeather API. Displays real-time weather conditions and forecasts. Built with Python and Flask."
+        },
+        {
+            "movieId": "P004",
+            "title": "Task Management Tool",
+            "year": 2021,
+            "price": 250,
+            "url": "./stock-vector-project-task-management-and-effective-time-planning-tools-project-development-icon-d-vector-2046318389.jpg",
+            "description": "A task management tool to create, organize, and track tasks and projects. Built using Vue.js and Firebase."
+        }
+    ]
+}

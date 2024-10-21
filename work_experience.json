@@ -1,0 +1,37 @@
+{
+    "roles": [
+        {
+            "company": "Tech Innovations Inc.",
+            "company_logo": "tech_innovations_inc.png",
+            "start_date": "06/15/2018",
+            "end_date": "09/30/2021",
+            "title": "Software Engineer",
+            "description": "Developed and maintained web applications using JavaScript, React, and Node.js. Collaborated with cross-functional teams to define project requirements and deliver high-quality software solutions."
+        },
+        {
+            "company": "Data Solutions LLC",
+            "company_logo": "data_solutions_llc.png",
+            "start_date": "01/15/2022",
+            "end_date": "12/31/2023",
+            "title": "Data Analyst",
+            "description": "Analyzed large datasets to extract actionable insights, improved reporting processes, and presented findings to stakeholders using data visualization tools like Tableau."
+        },
+        {
+            "company": "Creative Media Co.",
+            "company_logo": "creative_media_co.png",
+            "start_date": "03/01/2021",
+            "end_date": "12/01/2021",
+            "title": "Marketing Specialist",
+            "description": "Developed and executed marketing campaigns, managed social media accounts, and collaborated with design teams to create promotional materials that increased brand awareness."
+        },
+        {
+            "company": "Global Logistics Corp.",
+            "company_logo": "global_logistics_corp.png",
+            "start_date": "10/01/2021",
+            "end_date": "05/31/2022",
+            "title": "Operations Coordinator",
+            "description": "Coordinated logistics operations, optimized supply chain processes, and ensured timely delivery of goods. Worked closely with vendors and clients to improve service efficiency."
+        }
+
+    ]   
+}
